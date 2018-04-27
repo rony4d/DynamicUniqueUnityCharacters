@@ -371,7 +371,7 @@ namespace UMA.CharacterSystem.Examples
             Avatar.SetColor("Hair", HairColors.colors[RandHair]);
             Avatar.SetColor("Skin", SkinColors.colors[RandSkin]);
 
-            DynamicCharacterBuilderLogic.BuildWorkerAvatar(Avatar, Gender.Male);
+            DynamicCharacterBuilderLogic.BuildWorkerAvatar(Avatar, Gender.Female);
         }
 
     }

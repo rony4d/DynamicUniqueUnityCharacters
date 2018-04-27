@@ -10,20 +10,31 @@ public class DynamicCharacterBuilderLogic
 {
     readonly WardrobeItemLogic WardrobeItemLogic;
     readonly WardrobeSlotLogic wardrobeSlotLogic;
+
     Dictionary<string, Dictionary<string,bool>> wardrobeSlotItemsUsed;
+
     List<WardrobeItem> MaleWorkerWardrobeItems;
-    static bool isWardrobeSlotUsedDictionaryLoaded = false;
+    List<WardrobeItem> FemaleWorkerWardrobeItems;
+
+    static bool isMaleWardrobeSlotUsedDictionaryLoaded = false;
+    static bool isFemaleWardrobeSlotUsedDictionaryLoaded = false;
     Dictionary<string, bool> wardrobeItemDictionary;
+
     List<WardrobeSlot> MaleWorkerWardrobeslots;
+    List<WardrobeSlot> FemaleWorkerWardrobeslots;
 
     public DynamicCharacterBuilderLogic(){
+        
         wardrobeSlotLogic = new WardrobeSlotLogic();
         WardrobeItemLogic = new WardrobeItemLogic();
 
         MaleWorkerWardrobeslots = wardrobeSlotLogic.GetMaleWorkerSlots().Randomize().ToList();
+        FemaleWorkerWardrobeslots = wardrobeSlotLogic.GetFemaleWorkerSlots().Randomize().ToList();
 
         wardrobeSlotItemsUsed = new Dictionary<string, Dictionary<string, bool>>();
-        MaleWorkerWardrobeItems = WardrobeItemLogic.GetMaleWorkerWardrobeItems().Randomize().ToList();;
+
+        MaleWorkerWardrobeItems = WardrobeItemLogic.GetMaleWorkerWardrobeItems().Randomize().ToList();
+        FemaleWorkerWardrobeItems = WardrobeItemLogic.GetFemaleWorkerWardrobeItems().Randomize().ToList();
     }
     public void BuildWorkerAvatar(DynamicCharacterAvatar Avatar, Gender gender)
     {
@@ -33,7 +44,7 @@ public class DynamicCharacterBuilderLogic
         switch (gender)
         {
             case Gender.Male:
-                if (!isWardrobeSlotUsedDictionaryLoaded)
+                if (!isMaleWardrobeSlotUsedDictionaryLoaded)
                 {
                     foreach (WardrobeItem item in MaleWorkerWardrobeItems)
                     {
@@ -52,7 +63,11 @@ public class DynamicCharacterBuilderLogic
                             {
                                 string slot = wardrobeSlotItem.Key;
                                 if(slot == item.WardrobeSlot.Name){
-                                    wardrobeSlotItemsUsed[slot].Add(item.Name, false);
+                                    if (!wardrobeSlotItemsUsed[slot].Keys.Contains(item.Name))
+                                    {
+                                        wardrobeSlotItemsUsed[slot].Add(item.Name, false);
+
+                                    }
                                 }
                             }
 
@@ -60,7 +75,93 @@ public class DynamicCharacterBuilderLogic
 
 
                     }
-                    isWardrobeSlotUsedDictionaryLoaded = true;
+                    isMaleWardrobeSlotUsedDictionaryLoaded = true;
+                }
+
+                // Set random wardrobe slots.
+
+                foreach (WardrobeSlot item in MaleWorkerWardrobeslots)
+                {
+                    int cnt = MaleWorkerWardrobeslots.Count;
+                    if (cnt > 0)
+                    {
+                        string slotItemName = GetNextWardrobeSlotItem(item.Name);
+                        if (string.IsNullOrEmpty(slotItemName))
+                        {
+
+                            Avatar.ClearSlot(item.Name);
+                        }
+                        else
+                        {
+
+                            Avatar.SetSlot(item.Name, slotItemName);
+                        }
+                        wardrobeSlotItemsUsed[item.Name][slotItemName] = true;
+                        RemoveUsedWardrobeItems(item.Name,gender);
+
+                    }
+                }
+
+                break;
+            case Gender.Female:
+                if (!isFemaleWardrobeSlotUsedDictionaryLoaded)
+                {
+                    foreach (WardrobeItem item in FemaleWorkerWardrobeItems)
+                    {
+
+                        if (!wardrobeSlotItemsUsed.Keys.Contains(item.WardrobeSlot.Name))// first time
+                        {
+                            wardrobeItemDictionary = new Dictionary<string, bool>();
+                            wardrobeItemDictionary.Add(item.Name, false);
+
+                            wardrobeSlotItemsUsed.Add(item.WardrobeSlot.Name, wardrobeItemDictionary);
+
+
+                        }
+                        else
+                        {
+
+                            foreach (var wardrobeSlotItem in wardrobeSlotItemsUsed)
+                            {
+                                string slot = wardrobeSlotItem.Key;
+                                if (slot == item.WardrobeSlot.Name)
+                                {
+                                    if (!wardrobeSlotItemsUsed[slot].Keys.Contains(item.Name))
+                                    {
+                                        wardrobeSlotItemsUsed[slot].Add(item.Name, false);
+
+                                    }
+                                }
+                            }
+
+                        }
+
+
+                    }
+                    isFemaleWardrobeSlotUsedDictionaryLoaded = true;
+                }
+                // Set random wardrobe slots.
+
+                foreach (WardrobeSlot item in FemaleWorkerWardrobeslots)
+                {
+                    int cnt = FemaleWorkerWardrobeslots.Count;
+                    if (cnt > 0)
+                    {
+                        string slotItemName = GetNextWardrobeSlotItem(item.Name);
+                        if (string.IsNullOrEmpty(slotItemName))
+                        {
+
+                            Avatar.ClearSlot(item.Name);
+                        }
+                        else
+                        {
+
+                            Avatar.SetSlot(item.Name, slotItemName);
+                        }
+                        wardrobeSlotItemsUsed[item.Name][slotItemName] = true;
+                        RemoveUsedWardrobeItems(item.Name,gender);
+
+                    }
                 }
 
                 break;
@@ -68,30 +169,7 @@ public class DynamicCharacterBuilderLogic
        
         //Dictionary<string, List<UMATextRecipe>> recipes = Avatar.AvailableRecipes;
 
-        // Set random wardrobe slots.
-
-        foreach (WardrobeSlot item in MaleWorkerWardrobeslots)
-        {
-            int cnt = MaleWorkerWardrobeslots.Count;
-            if (cnt > 0)
-            {
-                string slotItemName = GetNextWardrobeSlotItem(item.Name);
-                if (string.IsNullOrEmpty(slotItemName))
-                    {
-
-                        Avatar.ClearSlot(item.Name);
-                    }
-                    else
-                    {
-
-                        Avatar.SetSlot(item.Name, slotItemName);
-                    }
-                wardrobeSlotItemsUsed[item.Name][slotItemName] = true;
-                RemoveUsedWardrobeItems(item.Name);
-
-            }
-        }
-
+       
 
         // Set Random DNA 
         Dictionary<string, DnaSetter> setters = Avatar.GetDNA();
@@ -125,8 +203,6 @@ public class DynamicCharacterBuilderLogic
     }
 
     public string GetNextWardrobeSlotItem(string slotName){
-        //if an item is used just pop it from the dictionary, when all the items in slot are now zero,
-        // then we can repopulate that slot
         string nextSlotItem = "";
         var wardrobeItems = wardrobeSlotItemsUsed[slotName];
         if (wardrobeItems.Count > 0)
@@ -145,7 +221,7 @@ public class DynamicCharacterBuilderLogic
         return nextSlotItem;
     }
 
-    public void RemoveUsedWardrobeItems(string slotName){
+    public void RemoveUsedWardrobeItems(string slotName,Gender gender){
         
         foreach (var item in wardrobeSlotItemsUsed[slotName])
         {
@@ -156,7 +232,7 @@ public class DynamicCharacterBuilderLogic
                 wardrobeSlotItemsUsed[slotName].Remove(slotItem);
                 if (wardrobeSlotItemsUsed[slotName].Values.Count == 0)
                 {
-                    RepopulateAllSlotItemsOfEmptySlot(slotName);
+                    RepopulateAllSlotItemsOfEmptySlot(slotName,gender);
 
                 }
                 break;
@@ -166,18 +242,34 @@ public class DynamicCharacterBuilderLogic
 
     }
 
-    public void RepopulateAllSlotItemsOfEmptySlot(string slotName){
+    public void RepopulateAllSlotItemsOfEmptySlot(string slotName,Gender gender){
 
-       List<WardrobeItem> maleWorkerWardrobeItems = 
-            WardrobeItemLogic.GetMaleWorkerWardrobeItems().
-                             Where(prop => prop.WardrobeSlot.Name == slotName).Randomize().ToList();
-        
-        foreach (var wardrobeSlotItem in maleWorkerWardrobeItems)
+        switch (gender)
         {
-            
-            wardrobeSlotItemsUsed[slotName].Add(wardrobeSlotItem.Name, false);
-            
+            case Gender.Male:
+                List<WardrobeItem> maleWorkerWardrobeItems =
+                WardrobeItemLogic.GetMaleWorkerWardrobeItems().
+                             Where(prop => prop.WardrobeSlot.Name == slotName).Randomize().ToList();
+
+                foreach (var wardrobeSlotItem in maleWorkerWardrobeItems)
+                {
+
+                    wardrobeSlotItemsUsed[slotName].Add(wardrobeSlotItem.Name, false);
+
+                }
+                break;
+            case Gender.Female:
+                List<WardrobeItem> femaleWorkerWardrobeItems =
+                WardrobeItemLogic.GetFemaleWorkerWardrobeItems().
+                             Where(prop => prop.WardrobeSlot.Name == slotName).Randomize().ToList();
+
+                foreach (var wardrobeSlotItem in femaleWorkerWardrobeItems)
+                {
+                    wardrobeSlotItemsUsed[slotName].Add(wardrobeSlotItem.Name, false);
+                }
+                break;
         }
+       
     }
 
 }
