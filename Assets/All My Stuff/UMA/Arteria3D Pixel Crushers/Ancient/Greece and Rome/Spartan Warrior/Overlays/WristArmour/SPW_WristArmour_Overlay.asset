@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: SPW_WristArmour_Overlay
+  m_EditorClassIdentifier: 
+  overlayName: SPW_WristArmour_Overlay
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: 32afe53181142094988421a73cc29a23, type: 3}
+  - {fileID: 2800000, guid: d7c12414cc0d29e43a0e8c3823ac703a, type: 3}
+  - {fileID: 2800000, guid: 40d676104df7d814e93ba2a5e7d0bf54, type: 3}
+  - {fileID: 2800000, guid: 9a942ebfa3b69d545b827216985c48fa, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: d91f4156023fbda4fba610a2e0234f38, type: 2}
+  OcclusionEntries: []

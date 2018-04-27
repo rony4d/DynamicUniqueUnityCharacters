@@ -1,0 +1,21 @@
+ManifestFileVersion: 0
+CRC: 1670170325
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a844eb70b01477816ed08b953ce3b383
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 3f77eea2624f7758fb2f4686f7ac7b73
+HashAppended: 0
+ClassTypes:
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 91
+  Script: {instanceID: 0}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Animations/IdleTest-w-head.controller
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Animations/StarCasterToonExpressionTest-converted5.anim
+Dependencies: []

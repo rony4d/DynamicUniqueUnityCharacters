@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e51b5f5a8a166140bb25f982e78d57e, type: 3}
+  m_Name: Spartan Warrior
+  m_EditorClassIdentifier: 
+  recipeType: DynamicCharacterAvatar
+  DisplayValue: 
+  compatibleRaces: []
+  wardrobeRecipeThumbs: []
+  wardrobeSlot: None
+  Hides: []
+  suppressWardrobeSlots: []
+  activeWardrobeSet:
+  - slot: Complexion
+    recipe: Spartan Warrior Belt Recipe
+  - slot: Cape
+    recipe: Spartan Warrior Cape Recipe
+  - slot: Helmet
+    recipe: Spartan Warrior Helmet Recipe
+  - slot: Feet
+    recipe: Spartan Warrior Sandals Recipe
+  - slot: AlternateHead
+    recipe: Spartan Warrior Shield Recipe
+  - slot: Legs
+    recipe: Spartan Warrior Shin Armour Recipe
+  - slot: Waist
+    recipe: Spartan Warrior Skirt Recipe
+  - slot: ThighGuards
+    recipe: Spartan Warrior Skirt_Pteruges Recipe
+  - slot: AlternateHands
+    recipe: Spartan Warrior Sword Recipe
+  - slot: Chest
+    recipe: Spartan Warrior Torso Armour Recipe
+  - slot: Gauntlets
+    recipe: Spartan Warrior Wrist Armour Recipe
+  MeshHideAssets: []
+  recipeString: '{"packedRecipeType":"DynamicCharacterAvatar","name":"Spartan_Warrior","race":"HumanMale_OBM","dna":[{"dnaType":"UMADnaTutorial","dnaTypeHash":-1679007774,"packedDna":"{\"eyeSpacing\":128}"}],"characterColors":[],"wardrobeSet":[{"slot":"Complexion","recipe":"Spartan
+    Warrior Belt Recipe"},{"slot":"Cape","recipe":"Spartan Warrior Cape Recipe"},{"slot":"Helmet","recipe":"Spartan
+    Warrior Helmet Recipe"},{"slot":"Feet","recipe":"Spartan Warrior Sandals Recipe"},{"slot":"AlternateHead","recipe":"Spartan
+    Warrior Shield Recipe"},{"slot":"Legs","recipe":"Spartan Warrior Shin Armour Recipe"},{"slot":"Waist","recipe":"Spartan
+    Warrior Skirt Recipe"},{"slot":"ThighGuards","recipe":"Spartan Warrior Skirt_Pteruges
+    Recipe"},{"slot":"AlternateHands","recipe":"Spartan Warrior Sword Recipe"},{"slot":"Chest","recipe":"Spartan
+    Warrior Torso Armour Recipe"},{"slot":"Gauntlets","recipe":"Spartan Warrior Wrist
+    Armour Recipe"}],"raceAnimatorController":""}'

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: in_chestpiece_Overlay
+  m_EditorClassIdentifier: 
+  overlayName: in_chestpiece
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: a1682020761c64c4a8793cf62d984792, type: 3}
+  - {fileID: 2800000, guid: aa5a97f8ee2f20f4a81cc5b63e634ee0, type: 3}
+  - {fileID: 2800000, guid: df22c2650ce5cf94cb070512cfa7b2b0, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: 4e5ffc45d56ea0e4ea31230f540a1c33, type: 2}
+  OcclusionEntries: []

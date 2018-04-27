@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: in_headband_feathers_A_Overlay
+  m_EditorClassIdentifier: 
+  overlayName: in_headband_feathers_A
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: 5af690f4bd2c63045b086a8c6a7d10bc, type: 3}
+  - {fileID: 2800000, guid: 53074434b365e0b44822021b7736092b, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: 6648f73547d16f641aa3268919d03417, type: 2}
+  OcclusionEntries: []

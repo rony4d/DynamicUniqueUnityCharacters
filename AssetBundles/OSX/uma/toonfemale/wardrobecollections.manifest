@@ -1,0 +1,27 @@
+ManifestFileVersion: 0
+CRC: 3106380171
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: db7ca2c91bf9ee26b71d94303c71dd7b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c02ebc43dad0a0878178c3f98c2b5a3f
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6ae7341e07d1b8f41aa37f5e2c910168, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/Thumbs/FemaleDancerCover1.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/Thumbs/ToonTopsCover.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/Thumbs/FemaleStarDancerCover1.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/ToonTopsBundle.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/ToonDancerCollection.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonFemale/WardrobeCollections/ToonStarDancerCollection.asset
+Dependencies: []

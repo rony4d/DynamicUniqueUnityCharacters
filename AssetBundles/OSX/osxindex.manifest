@@ -1,0 +1,18 @@
+ManifestFileVersion: 0
+CRC: 3036519628
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 33caa8105a9549bcc9b56bfd34046c6e
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 31bad7f03ba1e7a5326475f7a7496905
+HashAppended: 0
+ClassTypes:
+- Class: 114
+  Script: {fileID: 11500000, guid: 33cd2701e2874af4eb67ed5ee146eb7b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/OSXIndex.asset
+Dependencies: []

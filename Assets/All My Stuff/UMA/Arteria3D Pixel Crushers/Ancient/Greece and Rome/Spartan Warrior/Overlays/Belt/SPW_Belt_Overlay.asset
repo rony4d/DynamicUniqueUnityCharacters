@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: SPW_Belt_Overlay
+  m_EditorClassIdentifier: 
+  overlayName: SPW_Belt_Overlay
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: f41fdc7ceee36d24d91e5e03b6535be4, type: 3}
+  - {fileID: 2800000, guid: a3e0799b31b86764c862eda6c74a4494, type: 3}
+  - {fileID: 2800000, guid: a4ba17c40743db54fa07f05ade47ef0a, type: 3}
+  - {fileID: 2800000, guid: f2e506e82a53f404e95a81694561ecfd, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: d91f4156023fbda4fba610a2e0234f38, type: 2}
+  OcclusionEntries: []

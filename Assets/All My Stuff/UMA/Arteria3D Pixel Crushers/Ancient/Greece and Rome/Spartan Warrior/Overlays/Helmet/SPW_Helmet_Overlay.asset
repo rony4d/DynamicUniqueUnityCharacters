@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+  m_Name: SPW_Helmet_Overlay
+  m_EditorClassIdentifier: 
+  overlayName: SPW_Helmet_Overlay
+  overlayType: 0
+  rect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  alphaMask: {fileID: 0}
+  textureList:
+  - {fileID: 2800000, guid: 1d113b909d3b0c549a95012eaff914f4, type: 3}
+  - {fileID: 2800000, guid: 14b0d65526b91134da39baa2d0063155, type: 3}
+  - {fileID: 2800000, guid: 68a269072c859574f8717980ce4f5003, type: 3}
+  - {fileID: 2800000, guid: cb743de94895ec64587082800b487874, type: 3}
+  tags: []
+  material: {fileID: 11400000, guid: d91f4156023fbda4fba610a2e0234f38, type: 2}
+  OcclusionEntries: []

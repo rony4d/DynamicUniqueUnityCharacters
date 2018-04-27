@@ -1,0 +1,51 @@
+ManifestFileVersion: 0
+CRC: 851488315
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b3a3ab5b8b95c0e7f42bec4a7dfb3a62
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 80d5832ec3e1aaa6ffc41131e1410872
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: d6ce19a51999011448644fc01e9cec03, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f0188188c253e0c4bb9b46e19fa7312e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac718b8ce852d1445b8fbe5c323134ac, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Jeans_1.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Smart_Pants_1.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Hair/Hair_Short_Generic_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Smart_Pants_1_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Jeans_1_normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/blank_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/blank_normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Sneakers_1_detail_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Slots/Clothes/Shoes_Sneakers_1_Slot.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Jeans_1_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Hair/Hair_Short_Generic_normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Sneakers_1_detail.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Sneakers_1_normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Recipes/Thumbs/ToonSneakers1.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Jeans_1_detail.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Hair/Short_Swept_Hair_1.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Smart_Pants_1_detail.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Jeans_1_detail_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Smart_Pants_1_detail_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Sneakers_1_diffuse.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Recipes/ToonSneakers1.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Textures/Clothes/Smart_Pants_1_normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/ToonShared/Wardrobe1/Overlays/Clothes/Sneakers_1.asset
+Dependencies:
+- /Users/ugochukwu/UnityProjects/UMA/AssetBundles/OSX/uma/toonshared/racebase

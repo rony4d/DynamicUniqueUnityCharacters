@@ -1,0 +1,40 @@
+ManifestFileVersion: 0
+CRC: 2019161435
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 056a1ef50b985e751af93dfb46f26cd1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0762829f37fa4ab9f022bf86c76b02f4
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 49
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0c4834e6077abe64e968f9f87c9ac70a, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f0188188c253e0c4bb9b46e19fa7312e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ac718b8ce852d1445b8fbe5c323134ac, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+Assets:
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Recipes/WerewolfTShirt.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Textures/MaleShirt01_Albedo.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Recipes/Thumbs/TestMaleJeans2.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/ProTip-README.txt
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Textures/MaleShirt01_Roughness.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Textures/WerewolfTeeth_Diffuse.psd
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Overlays/WerewolfShirt.asset
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Textures/MaleShirt01_Normal.png
+- Assets/UMA/Examples/Extensions Examples/DynamicCharacterSystem/Assets/DemoAssetBundles/Werewolf/Wardrobe1/Recipes/Thumbs/WerewolfTShirt.png
+Dependencies: []
