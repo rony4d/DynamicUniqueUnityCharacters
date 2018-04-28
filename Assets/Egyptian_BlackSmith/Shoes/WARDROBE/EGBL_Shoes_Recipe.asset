@@ -9,13 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f0188188c253e0c4bb9b46e19fa7312e, type: 3}
-  m_Name: IndianLoinCloth
+  m_Name: EGBL_Shoes_Recipe
   m_EditorClassIdentifier: 
   recipeType: Wardrobe
-  DisplayValue: Indian Loin Cloth
+  DisplayValue: EGBL_Shoes
   compatibleRaces:
   - HumanMale
   - HumanMaleDCS
+  - HumanMaleHighPoly
   wardrobeRecipeThumbs:
   - race: HumanMale
     filename: 
@@ -23,13 +24,12 @@ MonoBehaviour:
   - race: HumanMaleDCS
     filename: 
     thumb: {fileID: 0}
-  wardrobeSlot: Waist
+  - race: HumanMaleHighPoly
+    filename: 
+    thumb: {fileID: 0}
+  wardrobeSlot: Feet
   Hides: []
-  suppressWardrobeSlots:
-  - Underwear
-  - Chest
-  - Legs
+  suppressWardrobeSlots: []
   activeWardrobeSet: []
-  MeshHideAssets: []
-  recipeString: '{"version":3,"packedSlotDataList":[],"slotsV2":[],"slotsV3":[{"id":"in_loincloth","scale":100,"copyIdx":-1,"overlays":[{"id":"in_loincloth","colorIdx":0,"rect":[0,0,0,0]}]}],"colors":[],"fColors":[{"name":"-","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]}],"sharedColorCount":0,"race":"","packedDna":[]}'
+  recipeString: '{"version":3,"packedSlotDataList":[],"slotsV2":[],"slotsV3":[{"id":"EGBL_Shoes","scale":100,"copyIdx":-1,"overlays":[{"id":"EGBL_Shoes","colorIdx":0,"rect":[0,0,0,0],"data":[]}]}],"colors":[],"fColors":[{"name":"","colors":[255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0,255,255,255,255,0,0,0,0]}],"sharedColorCount":0,"race":"","packedDna":[]}'
   replaces: Nothing

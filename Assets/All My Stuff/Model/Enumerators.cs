@@ -50,6 +50,7 @@ public enum WardrobeItemNames
     SpartanWarriorSkirt = 4,
     SpartanWarriorSandals = 5,
     EnchantedHood = 6,
+
     #endregion
 
     #region female
@@ -63,8 +64,15 @@ public enum WardrobeItemNames
     FemaleHair1 = 14,
     FemaleHair2 = 15,
     FemaleHair3 = 16,
-    FemaleUndies2 = 17
+    FemaleUndies2 = 17,
+
     #endregion
+
+    #region Unisex
+    EgyptianBlacksmithBelt = 18,
+    EgyptianBlacksmithHat = 19
+    #endregion
+
 
 }
 

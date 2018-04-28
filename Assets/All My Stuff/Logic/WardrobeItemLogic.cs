@@ -4,40 +4,18 @@ using System.Collections.Generic;
 
 public class WardrobeItemLogic
 {
-    List<WardrobeItem> _wardrobeItems { get; set; }
+    List<WardrobeItem> _maleWardrobeItems { get; set; }
 
-    public List<WardrobeItem> BuildAllWardrobeItems()
-    {
-        _wardrobeItems = new List<WardrobeItem>();
-        _wardrobeItems.Add(new WardrobeItem()
-        {
-            Id =
-            (int)WardrobeItemNames.BumsBeard,
-            Name = WardrobeItemNames.BumsBeard.ToString(),
-            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Beard, Name = SlotNames.Beard.ToString() }
-        });
-        _wardrobeItems.Add(new WardrobeItem() // No beard
-        {
-            Id =
-            0,
-            Name = string.Empty,
-            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Hair, Name = SlotNames.Hair.ToString() }
-        });
-        _wardrobeItems.Add(new WardrobeItem()
-        {
-            Id =
-           (int)WardrobeItemNames.IndianLoinCloth,
-            Name = WardrobeItemNames.IndianLoinCloth.ToString(),
-            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
-        });
-        return _wardrobeItems;
-    }
+    List<WardrobeItem> _femaleWardrobeItems { get; set; }
+
 
 
     public  List<WardrobeItem> GetMaleWorkerWardrobeItems(){
-        _wardrobeItems = new List<WardrobeItem>();
+        _maleWardrobeItems = new List<WardrobeItem>();
 
-        _wardrobeItems.Add(new WardrobeItem()
+        #region Beard
+
+        _maleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
            (int)WardrobeItemNames.BumsBeard,
@@ -45,86 +23,103 @@ public class WardrobeItemLogic
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Beard, Name = SlotNames.Beard.ToString() }
         });
 
-        _wardrobeItems.Add(new WardrobeItem() // No beard
+        _maleWardrobeItems.Add(new WardrobeItem() // No beard
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Beard, Name = SlotNames.Beard.ToString() }
         });
-       
-        _wardrobeItems.Add(new WardrobeItem()
+        #endregion
+        #region waist
+        _maleWardrobeItems.Add(new WardrobeItem()
+       {
+           Id =
+          (int)WardrobeItemNames.SpartanWarriorSkirt,
+           Name = WardrobeItemNames.SpartanWarriorSkirt.ToString(),
+           WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
+       });
+        _maleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id =
+           (int)WardrobeItemNames.EgyptianBlacksmithBelt,
+            Name = WardrobeItemNames.EgyptianBlacksmithBelt.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
+        });
+        _maleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
            (int)WardrobeItemNames.IndianLoinCloth,
             Name = WardrobeItemNames.IndianLoinCloth.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
         });
+        #endregion
 
-        _wardrobeItems.Add(new WardrobeItem()
-        {
-            Id =
-          (int)WardrobeItemNames.SpartanWarriorSkirt,
-            Name = WardrobeItemNames.SpartanWarriorSkirt.ToString(),
-            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
-        });
-        _wardrobeItems.Add(new WardrobeItem() //no foot wear :D
+        #region feet
+        _maleWardrobeItems.Add(new WardrobeItem() //no foot wear :D
         {
             Id =0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Feet, Name = SlotNames.Feet.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _maleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
          (int)WardrobeItemNames.SpartanWarriorSandals,
             Name = WardrobeItemNames.SpartanWarriorSandals.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Feet, Name = SlotNames.Feet.ToString() }
         });
-
+        #endregion
         #region helmet
-        _wardrobeItems.Add(new WardrobeItem() //no helmet
+        _maleWardrobeItems.Add(new WardrobeItem() //no helmet
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _maleWardrobeItems.Add(new WardrobeItem()
         {
-            Id =
-         (int)WardrobeItemNames.EnchantedHood,
+            Id =(int)WardrobeItemNames.EnchantedHood,
             Name = WardrobeItemNames.EnchantedHood.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
         });
+        _maleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id = (int)WardrobeItemNames.EgyptianBlacksmithHat,
+            Name = WardrobeItemNames.EgyptianBlacksmithHat.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
+        });
         #endregion
-        return _wardrobeItems;
+        return _maleWardrobeItems;
     }
+
+
 
     public List<WardrobeItem> GetFemaleWorkerWardrobeItems()
     {
-        _wardrobeItems = new List<WardrobeItem>();
+        _femaleWardrobeItems = new List<WardrobeItem>();
 
         #region hair
-        _wardrobeItems.Add(new WardrobeItem() //no hair
+        _femaleWardrobeItems.Add(new WardrobeItem() //no hair
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Hair, Name = SlotNames.Hair.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
          (int)WardrobeItemNames.FemaleHair1,
             Name = WardrobeItemNames.FemaleHair1.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Hair, Name = SlotNames.Hair.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
          (int)WardrobeItemNames.FemaleHair2,
             Name = WardrobeItemNames.FemaleHair2.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Hair, Name = SlotNames.Hair.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =(int)WardrobeItemNames.FemaleHair3,
             Name = WardrobeItemNames.FemaleHair3.ToString(),
@@ -133,7 +128,7 @@ public class WardrobeItemLogic
         #endregion
 
         #region Underwear
-        _wardrobeItems.Add(new WardrobeItem() // female must wear underwear at all times
+        _femaleWardrobeItems.Add(new WardrobeItem() // female must wear underwear at all times
         {
             Id =(int)WardrobeItemNames.FemaleUndies2,
             Name = WardrobeItemNames.FemaleUndies2.ToString(),
@@ -142,13 +137,13 @@ public class WardrobeItemLogic
         #endregion
 
         #region hands
-        _wardrobeItems.Add(new WardrobeItem() //no hands
+        _femaleWardrobeItems.Add(new WardrobeItem() //no hands
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Hands, Name = SlotNames.Hands.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =(int)WardrobeItemNames.PeasantFemaleGlove,
             Name = WardrobeItemNames.PeasantFemaleGlove.ToString(),
@@ -157,38 +152,53 @@ public class WardrobeItemLogic
         #endregion
 
         #region helmet
-        _wardrobeItems.Add(new WardrobeItem() //no helmet
+        _femaleWardrobeItems.Add(new WardrobeItem() //no helmet
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =
          (int)WardrobeItemNames.PeasantCap,
             Name = WardrobeItemNames.PeasantCap.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
         });
+        _femaleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id =
+             (int)WardrobeItemNames.EgyptianBlacksmithHat,
+            Name = WardrobeItemNames.EgyptianBlacksmithHat.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
+        });
+
         #endregion
 
         #region waist
-        _wardrobeItems.Add(new WardrobeItem() //no waist item
+        _femaleWardrobeItems.Add(new WardrobeItem() //no waist item
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id =(int)WardrobeItemNames.PeasantBelt,
             Name = WardrobeItemNames.PeasantBelt.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
         });
+        _femaleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id =
+          (int)WardrobeItemNames.EgyptianBlacksmithBelt,
+            Name = WardrobeItemNames.EgyptianBlacksmithBelt.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Waist, Name = SlotNames.Waist.ToString() }
+        });
         #endregion
 
         #region legs
-        _wardrobeItems.Add(new WardrobeItem() // lady workers must wear a gown or a lower body covering
+        _femaleWardrobeItems.Add(new WardrobeItem() // lady workers must wear a gown or a lower body covering
         {
             Id =(int)WardrobeItemNames.PeasantLowerBody,
             Name = WardrobeItemNames.PeasantLowerBody.ToString(),
@@ -197,28 +207,28 @@ public class WardrobeItemLogic
         #endregion
 
         #region shoulders
-        _wardrobeItems.Add(new WardrobeItem() //no shoulder item
+        _femaleWardrobeItems.Add(new WardrobeItem() //no shoulder item
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Shoulders, Name = SlotNames.Shoulders.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem() 
+        _femaleWardrobeItems.Add(new WardrobeItem() 
         {
-            Id = (int)WardrobeItemNames.PeasantLowerBody,
-            Name = WardrobeItemNames.PeasantLowerBody.ToString(),
+            Id = (int)WardrobeItemNames.PeasantShawl,
+            Name = WardrobeItemNames.PeasantShawl.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Shoulders, Name = SlotNames.Shoulders.ToString() }
         });
         #endregion
 
         #region chest
-        _wardrobeItems.Add(new WardrobeItem() //no chest item, but the underwear will always be below for covering
+        _femaleWardrobeItems.Add(new WardrobeItem() //no chest item, but the underwear will always be below for covering
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Chest, Name = SlotNames.Chest.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id = (int)WardrobeItemNames.PeasantTop,
             Name = WardrobeItemNames.PeasantTop.ToString(),
@@ -227,19 +237,19 @@ public class WardrobeItemLogic
         #endregion
 
         #region feet
-        _wardrobeItems.Add(new WardrobeItem() //no feet item, just bare feet
+        _femaleWardrobeItems.Add(new WardrobeItem() //no feet item, just bare feet
         {
             Id = 0,
             Name = string.Empty,
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Feet, Name = SlotNames.Feet.ToString() }
         });
-        _wardrobeItems.Add(new WardrobeItem()
+        _femaleWardrobeItems.Add(new WardrobeItem()
         {
             Id = (int)WardrobeItemNames.PeasantShoe,
             Name = WardrobeItemNames.PeasantShoe.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Feet, Name = SlotNames.Feet.ToString() }
         });
         #endregion
-        return _wardrobeItems;
+        return _femaleWardrobeItems;
     }
 }
