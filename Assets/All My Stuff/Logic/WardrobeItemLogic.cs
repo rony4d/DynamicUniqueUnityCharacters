@@ -89,7 +89,24 @@ public class WardrobeItemLogic
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Helmet, Name = SlotNames.Helmet.ToString() }
         });
         #endregion
+
+        #region FullOutfit
+
+        _maleWardrobeItems.Add(new WardrobeItem() //no fulloutfit item
+        {
+            Id = 0,
+            Name = string.Empty,
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.FullOutfit, Name = SlotNames.FullOutfit.ToString() }
+        });
+        _maleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id = (int)WardrobeItemNames.EgyptianBlacksmithApron,
+            Name = WardrobeItemNames.EgyptianBlacksmithApron.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.FullOutfit, Name = SlotNames.FullOutfit.ToString() }
+        });
+        #endregion
         return _maleWardrobeItems;
+
     }
 
 
@@ -248,6 +265,20 @@ public class WardrobeItemLogic
             Id = (int)WardrobeItemNames.PeasantShoe,
             Name = WardrobeItemNames.PeasantShoe.ToString(),
             WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.Feet, Name = SlotNames.Feet.ToString() }
+        });
+        #endregion
+        #region FullOutfit
+        _femaleWardrobeItems.Add(new WardrobeItem() //no fulloutfit item
+        {
+            Id = 0,
+            Name = string.Empty,
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.FullOutfit, Name = SlotNames.FullOutfit.ToString() }
+        });
+        _femaleWardrobeItems.Add(new WardrobeItem()
+        {
+            Id = (int)WardrobeItemNames.EgyptianBlacksmithApron,
+            Name = WardrobeItemNames.EgyptianBlacksmithApron.ToString(),
+            WardrobeSlot = new WardrobeSlot() { Id = (int)SlotNames.FullOutfit, Name = SlotNames.FullOutfit.ToString() }
         });
         #endregion
         return _femaleWardrobeItems;

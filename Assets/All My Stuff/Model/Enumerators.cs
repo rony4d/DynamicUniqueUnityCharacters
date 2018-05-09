@@ -1,18 +1,13 @@
 using UnityEngine;
 using System.Collections;
 
-public enum CharacterStrengthCategoryEnum
+public enum RoleCategoryEnum
 {
-    RegularMaleWorker = 1,
-    RegularFemaleWorker = 2,
-    EnchantedMaleWorker = 3,
-    EnchantedFemaleWorker = 4,
-    RegularMaleSoldier = 5,
-    RegularFemaleSoldier = 6,
-    EnchantedMaleSoldier = 7,
-    EnchantedFemaleSoldier = 8,
+    Regular = 1,
+    Enchanted = 2,
+
 }
-public enum CharacterCategoryEnum
+public enum RoleEnum
 {
     Worker = 1,
     Soldier = 2,
@@ -38,6 +33,7 @@ public enum SlotNames
     Beard = 17,
     Shoulders = 18,
     Hands = 19,
+    FullOutfit = 20,
 
 }
 
@@ -70,13 +66,29 @@ public enum WardrobeItemNames
 
     #region Unisex
     EgyptianBlacksmithBelt = 18,
-    EgyptianBlacksmithHat = 19
+    EgyptianBlacksmithHat = 19,
+    EgyptianBlacksmithApron = 20,
+    EgyptianBlacksmithShoes = 21,
+    EgyptianBlacksmithSkirt = 22
     #endregion
-
-
 }
 
 public enum Gender{
     Male = 1,
     Female = 2
+}
+
+public enum Kingdoms{
+    Wakanda = 1,
+    Asgard = 2,
+
+}
+
+public enum Genome{
+    height,
+    armLength,
+    upperMuscle,
+    lowerMuscle,
+    upperWeight,
+    lowerWeight 
 }

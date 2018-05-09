@@ -1118,6 +1118,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394387163}
+--- !u!1 &446546859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 446546860}
+  - component: {fileID: 446546862}
+  - component: {fileID: 446546861}
+  m_Layer: 5
+  m_Name: FemaleWorker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &446546860
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446546859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 612371063}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 80, y: 0}
+  m_SizeDelta: {x: 160, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &446546861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446546859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: FemaleWorker
+--- !u!222 &446546862
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 446546859}
 --- !u!1 &525861670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,6 +1507,128 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &612371062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 612371063}
+  - component: {fileID: 612371066}
+  - component: {fileID: 612371065}
+  - component: {fileID: 612371064}
+  m_Layer: 5
+  m_Name: FemaleWorker
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &612371063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612371062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 446546860}
+  m_Father: {fileID: 1846544174}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -80, y: -80}
+  m_SizeDelta: {x: 130, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &612371064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612371062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 612371065}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 222486131}
+        m_MethodName: BuildFemaleWorker
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &612371065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612371062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &612371066
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 612371062}
 --- !u!1 &618055743
 GameObject:
   m_ObjectHideFlags: 0
@@ -2061,11 +2257,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.size
-      value: 48
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.size
-      value: 53
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 433544, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -2342,82 +2538,82 @@ Prefab:
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[48]
       value: 
-      objectReference: {fileID: 11400000, guid: 6f177e950d553e04381fda817cf2ac51,
+      objectReference: {fileID: 11400000, guid: c2790d1e5e2ce5f4894860787b039348,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[49]
       value: 
-      objectReference: {fileID: 11400000, guid: 7e3217f7c0af3aa489cb18e2de8ac888,
+      objectReference: {fileID: 11400000, guid: 0735fe80bc7625541b5268901bcc3b44,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[50]
       value: 
-      objectReference: {fileID: 11400000, guid: c6358aa8f36b22846bb85f26a30e8c6a,
+      objectReference: {fileID: 11400000, guid: b4d15edf5dc0f444992a5fc684978f8d,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[51]
       value: 
-      objectReference: {fileID: 11400000, guid: 96efa554e673f0c40ba212cde7477926,
+      objectReference: {fileID: 11400000, guid: c2790d1e5e2ce5f4894860787b039348,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[52]
       value: 
-      objectReference: {fileID: 11400000, guid: 2ea0c2632af00954d80449e69aae3961,
+      objectReference: {fileID: 11400000, guid: 0735fe80bc7625541b5268901bcc3b44,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[53]
       value: 
-      objectReference: {fileID: 11400000, guid: 8a26b0d5108b3df40afa563c81076268,
+      objectReference: {fileID: 11400000, guid: b4d15edf5dc0f444992a5fc684978f8d,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[54]
       value: 
-      objectReference: {fileID: 11400000, guid: 158625e1782339b47ab36baa044aa6bb,
+      objectReference: {fileID: 11400000, guid: c2790d1e5e2ce5f4894860787b039348,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[55]
       value: 
-      objectReference: {fileID: 11400000, guid: 498d55a6668af824ca9b8a1fab1764da,
+      objectReference: {fileID: 11400000, guid: e8183fde4bfa14b48a6e123e3b4875b0,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[56]
       value: 
-      objectReference: {fileID: 11400000, guid: 66dc6991ea490104ca812bba7bae9524,
+      objectReference: {fileID: 11400000, guid: d62d81059321a4344b0d31ec55139f1f,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[57]
       value: 
-      objectReference: {fileID: 11400000, guid: 0a848c42aaac21043a766fd934b4fc81,
+      objectReference: {fileID: 11400000, guid: 0735fe80bc7625541b5268901bcc3b44,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[58]
       value: 
-      objectReference: {fileID: 11400000, guid: 563e0d9cf832d4d459ec52136266e236,
+      objectReference: {fileID: 11400000, guid: b4d15edf5dc0f444992a5fc684978f8d,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[59]
       value: 
-      objectReference: {fileID: 11400000, guid: b1b568e08910dda4a914ad64a0fa75c8,
+      objectReference: {fileID: 11400000, guid: c2790d1e5e2ce5f4894860787b039348,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[60]
       value: 
-      objectReference: {fileID: 11400000, guid: b520f86d1223e3b4999507cee7b6958c,
+      objectReference: {fileID: 11400000, guid: e8183fde4bfa14b48a6e123e3b4875b0,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[61]
       value: 
-      objectReference: {fileID: 11400000, guid: 1cb8a895dbe7af3499df9ad078311653,
+      objectReference: {fileID: 11400000, guid: d62d81059321a4344b0d31ec55139f1f,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[62]
       value: 
-      objectReference: {fileID: 11400000, guid: fe973a02183b3894296cc24e40283fde,
+      objectReference: {fileID: 11400000, guid: 0735fe80bc7625541b5268901bcc3b44,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[63]
       value: 
-      objectReference: {fileID: 11400000, guid: 04442629189f10a48bc3238f44aa9856,
+      objectReference: {fileID: 11400000, guid: b4d15edf5dc0f444992a5fc684978f8d,
         type: 2}
     - target: {fileID: 11459230, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: slotElementList.Array.data[64]
@@ -3092,82 +3288,82 @@ Prefab:
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[53]
       value: 
-      objectReference: {fileID: 11400000, guid: 61ff84e89ca1f5c41856a75449025092,
+      objectReference: {fileID: 11400000, guid: 9d65f84c911e1384e818dc548688a486,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[54]
       value: 
-      objectReference: {fileID: 11400000, guid: 63212701cc50fca4eac77618947eb849,
+      objectReference: {fileID: 11400000, guid: f39cf4d8d5e213448908a68c02bd76fd,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[55]
       value: 
-      objectReference: {fileID: 11400000, guid: 7c7d4dd46aadf264ca87a97b357a238e,
+      objectReference: {fileID: 11400000, guid: 354fe8d64a420994bae846fdb48b84d6,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[56]
       value: 
-      objectReference: {fileID: 11400000, guid: f3ed1216fb09ee24f83e35b72805413f,
+      objectReference: {fileID: 11400000, guid: 9d65f84c911e1384e818dc548688a486,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[57]
       value: 
-      objectReference: {fileID: 11400000, guid: 73cf00c391282944c8251cee30c6cb68,
+      objectReference: {fileID: 11400000, guid: f39cf4d8d5e213448908a68c02bd76fd,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[58]
       value: 
-      objectReference: {fileID: 11400000, guid: 8a43aa28029a29d42954e05d04d1bec3,
+      objectReference: {fileID: 11400000, guid: 354fe8d64a420994bae846fdb48b84d6,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[59]
       value: 
-      objectReference: {fileID: 11400000, guid: 2c4ecf1627276e74292e6455114acb04,
+      objectReference: {fileID: 11400000, guid: 9d65f84c911e1384e818dc548688a486,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[60]
       value: 
-      objectReference: {fileID: 11400000, guid: 6eda48a7b8e7b6a4eb0d46220ebc2c6b,
+      objectReference: {fileID: 11400000, guid: f0a261124f93a644198e0df30e5dc95a,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[61]
       value: 
-      objectReference: {fileID: 11400000, guid: 3107dc56c4709a244b17c122736cf126,
+      objectReference: {fileID: 11400000, guid: 45dd0fff94e83f24eb76ac165804ca7b,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[62]
       value: 
-      objectReference: {fileID: 11400000, guid: 3e2301213b719e549ad53ae013abcde2,
+      objectReference: {fileID: 11400000, guid: f39cf4d8d5e213448908a68c02bd76fd,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[63]
       value: 
-      objectReference: {fileID: 11400000, guid: a61b80b3ef057274e93e5d8c6a2aacec,
+      objectReference: {fileID: 11400000, guid: 354fe8d64a420994bae846fdb48b84d6,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[64]
       value: 
-      objectReference: {fileID: 11400000, guid: 25df90b5e017453499c48fdb9051267c,
+      objectReference: {fileID: 11400000, guid: 9d65f84c911e1384e818dc548688a486,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[65]
       value: 
-      objectReference: {fileID: 11400000, guid: 335dc3fe2bdb9a24ea853d1023a2ab3e,
+      objectReference: {fileID: 11400000, guid: f0a261124f93a644198e0df30e5dc95a,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[66]
       value: 
-      objectReference: {fileID: 11400000, guid: ce42e52cde1fa497a9cefe4127e2b5b8,
+      objectReference: {fileID: 11400000, guid: 45dd0fff94e83f24eb76ac165804ca7b,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[67]
       value: 
-      objectReference: {fileID: 11400000, guid: 30819781a55e5b540abd5f8a35901ca2,
+      objectReference: {fileID: 11400000, guid: f39cf4d8d5e213448908a68c02bd76fd,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[68]
       value: 
-      objectReference: {fileID: 11400000, guid: 35d1a43e1188bc94a9fe409bcecaa203,
+      objectReference: {fileID: 11400000, guid: 354fe8d64a420994bae846fdb48b84d6,
         type: 2}
     - target: {fileID: 11485782, guid: fe29e3c90ef88194184c6f3656db5ec5, type: 2}
       propertyPath: overlayElementList.Array.data[69]
@@ -5196,7 +5392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000019035744}
+  m_AnchoredPosition: {x: 0, y: 0.000017896482}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1670445105
@@ -5301,7 +5497,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BuildWorker
+  m_Text: MaleWorker
 --- !u!222 &1729278207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5830,6 +6026,7 @@ RectTransform:
   - {fileID: 1984487158}
   - {fileID: 1347596811}
   - {fileID: 1866669105}
+  - {fileID: 612371063}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5915,7 +6112,7 @@ GameObject:
   - component: {fileID: 1866669107}
   - component: {fileID: 1866669106}
   m_Layer: 5
-  m_Name: BuildWorker
+  m_Name: MaleWorker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5937,8 +6134,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -262, y: -50}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -60, y: -50}
+  m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866669106
 MonoBehaviour:
@@ -5980,7 +6177,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 222486131}
-        m_MethodName: BuildWorker
+        m_MethodName: BuildMaleWorker
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6347,8 +6544,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1645511934}
   m_HandleRect: {fileID: 1645511933}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -6693,7 +6890,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.size
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[3]._compatibleRaces.Array.size
@@ -6701,23 +6898,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[4]._compatibleRaces.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[5]._compatibleRaces.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[6]._compatibleRaces.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._compatibleRaces.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._compatibleRaces.Array.size
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[9]._compatibleRaces.Array.size
@@ -6769,15 +6966,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._recipeName
-      value: MaleUnderwear
+      value: FemaleUndies2
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.data[0]
-      value: HumanMale
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.data[1]
-      value: HumanMaleDCS
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: context
@@ -6785,15 +6982,15 @@ Prefab:
       objectReference: {fileID: 953008214}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._recipeName
-      value: FemaleUndies2
+      value: MaleUnderwear
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[0]
-      value: HumanFemaleDCS
+      value: HumanMale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[1]
-      value: HumanFemale
+      value: HumanMaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: activeRace.name
@@ -6801,7 +6998,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._recipeName
-      value: IndianLoinCloth
+      value: EgyptianBlacksmithApron
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[0]
@@ -6813,7 +7010,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[3]._recipeName
-      value: IndianTrouser
+      value: EGBL_Apron_Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[3]._compatibleRaces.Array.data[0]
@@ -6829,7 +7026,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[3]._compatibleRaces.Array.data[3]
-      value: HumanMale_OBM
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[0]._compatibleRaces.Array.data[2]
@@ -6850,18 +7047,18 @@ Prefab:
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: raceAnimationControllers.defaultAnimationController
       value: 
-      objectReference: {fileID: 9100000, guid: ae859d58fdf844b73863d3833f955cdf, type: 2}
+      objectReference: {fileID: 9100000, guid: eb280940c811fab4a9e3ddf09381c343, type: 2}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[2]
-      value: HumanMaleHighPoly
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[3]
-      value: HumanMale_OBM
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[4]._recipeName
-      value: Robe
+      value: EGBL_Shoes_Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[4]._compatibleRaces.Array.data[0]
@@ -6873,51 +7070,51 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[5]._recipeName
-      value: SpartanHelmet
+      value: PeasantTop
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[5]._compatibleRaces.Array.data[0]
-      value: HumanMale
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[5]._compatibleRaces.Array.data[1]
-      value: HumanMaleDCS
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[6]._recipeName
-      value: SpartanShield
+      value: PeasantTop
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[6]._compatibleRaces.Array.data[0]
-      value: HumanMale
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[6]._compatibleRaces.Array.data[1]
-      value: HumanMaleDCS
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._recipeName
-      value: Spartan Warrior Wrist Armour Recipe
+      value: PeasantTop
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._compatibleRaces.Array.data[0]
-      value: HumanMale
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._compatibleRaces.Array.data[1]
-      value: HumanMaleDCS
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._recipeName
-      value: Spartan Warrior Wrist Armour Recipe
+      value: PeasantTop
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._compatibleRaces.Array.data[0]
-      value: HumanMale
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._compatibleRaces.Array.data[1]
-      value: HumanMaleDCS
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[4]._compatibleRaces.Array.data[2]
@@ -6925,7 +7122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[4]._compatibleRaces.Array.data[3]
-      value: HumanMale_OBM
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[5]._compatibleRaces.Array.data[2]
@@ -6941,23 +7138,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._compatibleRaces.Array.data[2]
-      value: HumanMaleHighPoly
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[7]._compatibleRaces.Array.data[3]
-      value: HumanMale_OBM
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._compatibleRaces.Array.data[2]
-      value: HumanMaleHighPoly
+      value: HumanFemale
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[8]._compatibleRaces.Array.data[3]
-      value: HumanMale_OBM
+      value: HumanFemaleDCS
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[9]._recipeName
-      value: Spartan Warrior Wrist Armour Recipe
+      value: Spartan Warrior Skirt_Pteruges Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[9]._compatibleRaces.Array.data[0]
@@ -6977,7 +7174,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[10]._recipeName
-      value: Spartan Warrior Wrist Armour Recipe
+      value: Spartan Warrior Sword Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[10]._compatibleRaces.Array.data[0]
@@ -6997,7 +7194,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[11]._recipeName
-      value: Spartan Warrior Wrist Armour Recipe
+      value: Spartan Warrior Torso Armour Recipe
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[11]._compatibleRaces.Array.data[0]
@@ -7037,6 +7234,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
       propertyPath: preloadWardrobeRecipes.recipes.Array.data[6]._compatibleRaces.Array.data[3]
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[1]._compatibleRaces.Array.data[2]
+      value: HumanMaleHighPoly
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[2]._compatibleRaces.Array.data[4]
+      value: HumanFemaleDCS
+      objectReference: {fileID: 0}
+    - target: {fileID: 11453600, guid: 5c80fc4442f8349969abea6c1a0f1faa, type: 2}
+      propertyPath: preloadWardrobeRecipes.recipes.Array.data[3]._compatibleRaces.Array.data[4]
       value: HumanFemaleDCS
       objectReference: {fileID: 0}
     m_RemovedComponents: []
